@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `blog_posts` (
   `entity_id` varchar(45) DEFAULT NULL,
   `xreference` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `my_unique_key` (`entity_id`,`xreference`)
+  UNIQUE KEY `my_unique_key` (`id`, `entity_id`,`xreference`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- Dumping data for table kohana.blog_posts: ~4 rows (approximately)
@@ -36,7 +36,8 @@ CREATE TABLE IF NOT EXISTS `galleries` (
   `name` varchar(45) DEFAULT NULL,
   `entity_id` varchar(45) DEFAULT NULL,
   `entity_type_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `my_unique_key` (`id`, `entity_id`,`xreference`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Dumping data for table kohana.galleries: ~0 rows (approximately)
