@@ -26,7 +26,8 @@ INSERT IGNORE INTO `blog_posts` (`id`, `name`, `entity_id`, `xreference`) VALUES
 	(3, 'hello vasya', '1', 'users'),
 	(4, 'hello petya', '2', 'users'),
 	(5, 'hello mdk', '1', 'groups'),
-	(6, 'hello orly', '2', 'groups');
+	(6, 'hello orly', '2', 'groups'),
+	(7, 'vasya again', '1', 'users');
 /*!40000 ALTER TABLE `blog_posts` ENABLE KEYS */;
 
 
